@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #0c0f1c;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Glowing grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 255, 204, 0.04) 0px, transparent 4px),
+    repeating-linear-gradient(90deg, rgba(0, 255, 204, 0.04) 0px, transparent 4px);
+  z-index: -1;
+  animation: scan 15s linear infinite;
+}
+
+@keyframes scan {
+  from { background-position: 0 0; }
+  to { background-position: 0 100px; }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  background: radial-gradient(ellipse at top left, #07121e 0%, #0c0f1c 100%);
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.portrait img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffcce0;
+}
+
+.bio {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bio h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc88;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccf6f2;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 8px 16px;
+  border: 1px solid #00ffcc80;
+  color: #00ffcc;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #00ffcc22;
+}
+
+.section {
+  background: rgba(10, 15, 30, 0.75);
+  margin: 40px 0;
+  border: 1px solid #00ffcc33;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 20px #00ffcc22;
+}
+
+.section h2 {
+  color: #00ffcc;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #00ffccaa;
+}
+
+.section p,
+.section a {
+  color: #ffffffcc;
+  line-height: 1.6;
+}
+
+.section a {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+
+.graph-img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffcc55;
+}
+
+/* Skills with bars */
+.skills {
+  list-style: none;
+  max-width: 400px;
+}
+
+.skills li {
+  margin-bottom: 20px;
+  color: #ccf6f2;
+}
+
+.skills li span:first-child {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.skill-bar {
+  background: #002c2a;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc55 inset;
+}
+
+.skill-level {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 12px;
+  transition: width 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.skill-level.ccpp {
+  background: #00ffcc;
+}
+
+.skill-level.java {
+  background: #f7b731;
+}
+
+.skill-level.kotlin {
+  background: #9b59b6;
+}
+
+.skill-level.htmlcss {
+  background: #3498db;
+}
+
+/* Make sure the percentage text is above the colored bar */
+.skill-bar span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0a0e1a;
+  border-top: 1px solid #00ffcc33;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+}
