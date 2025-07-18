@@ -1,3 +1,4 @@
+/* Reset and Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +13,19 @@ body {
   position: relative;
 }
 
-/* Glowing grid overlay */
+/* Video Background */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -3; /* Behind everything */
+  opacity: 0.25; /* Adjust to make content visible */
+}
+
+/* Glowing Grid Overlay */
 body::before {
   content: "";
   position: fixed;
@@ -29,6 +42,7 @@ body::before {
   to { background-position: 0 100px; }
 }
 
+/* Layout */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -88,6 +102,7 @@ body::before {
   background: #00ffcc22;
 }
 
+/* Sections */
 .section {
   background: rgba(10, 15, 30, 0.75);
   margin: 40px 0;
@@ -121,7 +136,7 @@ body::before {
   box-shadow: 0 0 20px #00ffcc55;
 }
 
-/* Skills with bars */
+/* Skills */
 .skills {
   list-style: none;
   max-width: 400px;
@@ -180,7 +195,7 @@ body::before {
   background: #3498db;
 }
 
-/* Make sure the percentage text is above the colored bar */
+/* Ensure text is above the bar */
 .skill-bar span {
   position: relative;
   z-index: 1;
