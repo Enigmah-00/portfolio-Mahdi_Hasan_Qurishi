@@ -2,8 +2,6 @@
 
 ## 🚀 Hero Section Preview
 
-![Portfolio Screenshot](./images/portfolio-screenshot.png)
-
 ---
 
 ## 🧩 How This Section Works
