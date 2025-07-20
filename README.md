@@ -79,3 +79,13 @@ The **Hero Section** contains:
   background: #00ffcc22;
 }
 ```
+
+## 🗂️ Features Summary
+
+| Feature             | Description                              |
+|--------------------|------------------------------------------|
+| Neon Profile Image  | Adds a glowing effect to the profile picture |
+| Glowing Name Text   | Uses text-shadow for cyberpunk look      |
+| Flex Layout         | Places image and bio side by side        |
+| Quick Links         | Button-style links with hover interaction |
+
