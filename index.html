@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mahdi Hasan Qurishi | Cyberpunk Portfolio</title>
+  <title>Mahdi Hasan Qurishi | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="hero">
-    <div class="glow-grid"></div>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="images/vecteezy_data-neural-network-ai-technology-cloud-computing-bits_21723042.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Top Navigation Bar -->
+  <div class="top-nav">
+    <div class="quick-links">
+      <a href="#about">About</a>
+      <a href="#stats">Competitive Programming</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#cocurricular">Co-Curricular</a>
+    </div>
+  </div>
+
+  <div class="hero" id="about">
     <div class="container hero-content">
       <div class="portrait">
         <img src="images/ChatGPT Image Jul 18, 2025, 01_41_32 PM.png" alt="Mahdi Hasan Qurishi" />
@@ -21,26 +38,29 @@
         <div class="links">
           <a href="https://codeforces.com/profile/ENIGMAH" target="_blank">Codeforces</a>
           <a href="https://www.codechef.com/users/disaster_101" target="_blank">CodeChef</a>
+          <a href="https://atcoder.jp/users/enigmah_00" target="_blank">AtCoder</a>
           <a href="https://github.com/Enigmah-00" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
   </div>
 
-  <section class="section container">
+  <section class="section container" id="stats">
     <h2>Competitive Programming Stats</h2>
     <img src="images/ChatGPT Image Jul 18, 2025, 12_37_24 PM.png" alt="Problem Solving Graph" class="graph-img"/>
   </section>
 
-  <section class="section container">
+  <section class="section container" id="projects">
     <h2>Project: ScanShot</h2>
     <p>
       ScanShot is an OCR + OMR Android application built with Kotlin and ML Kit. It detects and evaluates MCQ sheets and text in real-time.
     </p>
-    <a href="https://github.com/Enigmah-00/project2-2" target="_blank">View on GitHub</a>
+    <div class="links">
+      <a href="https://github.com/Enigmah-00/project2-2" target="_blank">View on GitHub</a>
+    </div>
   </section>
 
-  <section class="section container">
+  <section class="section container" id="skills">
     <h2>Skills</h2>
     <ul class="skills">
       <li>
@@ -71,19 +91,50 @@
           <span>90%</span>
         </div>
       </li>
+      <li>
+        <span>Python</span>
+        <div class="skill-bar">
+          <div class="skill-level python" style="width: 50%;"></div>
+          <span>50%</span>
+        </div>
+      </li>
+      <li>
+        <span>Prompt Engineering</span>
+        <div class="skill-bar">
+          <div class="skill-level prompt" style="width: 70%;"></div>
+          <span>70%</span>
+        </div>
+      </li>
+      <li>
+        <span>Web Development</span>
+        <div class="skill-bar">
+          <div class="skill-level webdev" style="width: 10%;"></div>
+          <span>10%</span>
+        </div>
+      </li>
+      <li>
+        <span>Managing Skill</span>
+        <div class="skill-bar">
+          <div class="skill-level management"></div>
+          <span>∞</span>
+        </div>
+      </li>
     </ul>
   </section>
 
-  <section class="section container">
+  <section class="section container" id="cocurricular">
     <h2>Co-Curricular Activities</h2>
     <p>
       Apart from programming, I enjoy playing chess online.
     </p>
-    <a href="https://www.chess.com/member/enigmah_00" target="_blank">Chess.com Profile</a>
+    <div class="links">
+      <a href="https://www.chess.com/member/enigmah_00" target="_blank">Chess.com Profile</a>
+    </div>
   </section>
 
   <footer>
     <p>Connect: <a href="mailto:mahdiqureshi9@gmail.com">mahdiqureshi9@gmail.com</a></p>
   </footer>
+
 </body>
 </html>
