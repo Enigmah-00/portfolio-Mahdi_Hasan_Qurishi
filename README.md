@@ -38,3 +38,44 @@ The **Hero Section** contains:
     </div>
   </div>
 </div>
+
+```
+## 🎨 CSS Highlights
+
+```css
+.hero {
+  background: radial-gradient(ellipse at top left, #07121e 0%, #0c0f1c 100%);
+  padding-top: 80px;
+}
+
+.hero-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.portrait img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffcce0;
+}
+
+.bio h1 {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc88;
+}
+
+.links a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #00ffcc80;
+  color: #00ffcc;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #00ffcc22;
+}
+```
