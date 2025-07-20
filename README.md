@@ -89,3 +89,31 @@ The **Hero Section** contains:
 | Flex Layout         | Places image and bio side by side        |
 | Quick Links         | Button-style links with hover interaction |
 
+---
+
+![Portfolio Screenshot](./images/ss2.png)
+![Portfolio Screenshot](./images/ss3.png)
+
+## 🧩 How This Section Works
+
+The **Competitive Programming Stats** contains: 
+
+- an image of graph of problem solving
+
+---
+
+
+## 📄 HTML Structure
+
+```html
+  <section class="section container" id="stats">
+    <h2>Competitive Programming Stats</h2>
+    <img src="images/ChatGPT Image Jul 18, 2025, 12_37_24 PM.png" alt="Problem Solving Graph" class="graph-img"/>
+  </section>
+```
+![Portfolio Screenshot](./images/ss4.png)
+
+## Projects and skill preview
+
+## 📄 HTML Structure
+
